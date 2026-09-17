@@ -171,8 +171,8 @@ standalone scripts, not the dashboard's own quick-trained copy.
 | 5-fold CV (default params) | 0.912 ± 0.008 | 0.883 ± 0.011 | 0.956 ± 0.008 |
 | 5-fold CV (Optuna-tuned) | 0.913 ± 0.008 | 0.884 ± 0.011 | 0.955 ± 0.008 |
 
-Tuning barely moved this number, which is itself worth noting: the default settings
-were already close to optimal on this dataset.
+Tuning barely moved this number. The default settings were already close to optimal
+on this dataset.
 
 ### VIT-EAR cost-sensitive model (synthetic data, n=600)
 
@@ -184,9 +184,9 @@ were already close to optimal on this dataset.
 | Cost-sensitive, 5-fold CV (Optuna-tuned) | 0.713 ± 0.029 | 0.418 ± 0.064 | 0.558 ± 0.066 |
 
 The cost-sensitive model gives up some raw accuracy in exchange for a lower expected
-cost. That's the intended effect of the cost matrix, not a side effect. Unlike the
-baseline, tuning here made a real difference (mean cost 0.603 to 0.558, accuracy
-0.643 to 0.713 at the same time).
+cost, which is exactly what the cost matrix is designed to do. Unlike the baseline,
+tuning here made a real difference (mean cost 0.603 to 0.558, accuracy 0.643 to
+0.713 at the same time).
 
 Per-class recall on Level 3 / Withdrawal isn't reported in the table above. There
 were only 4 such students in that single test split, which is too small a sample to
@@ -213,7 +213,7 @@ Most of the confusion was between Bored and Drowsy, two states that look similar
 A simulated 40-frame session correctly surfaced only the aggregate statistic (47.5%
 sustained engagement), never a per-frame or per-identity result.
 
-## A design detail worth mentioning
+## A design detail on attendance
 
 Attendance risk started out as a static snapshot (mean/min attendance %) with no
 sense of how much of the semester was left, so a student at 40% attendance in week 2
