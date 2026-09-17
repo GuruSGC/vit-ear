@@ -1,0 +1,51 @@
+{
+  "provenance": "Synthetic data only. Shows the mechanism works, not a claim about real students.",
+  "cost_matrix": [
+    [
+      0.0,
+      1.0,
+      2.0,
+      3.0
+    ],
+    [
+      3.0,
+      0.0,
+      1.0,
+      2.0
+    ],
+    [
+      6.0,
+      3.0,
+      0.0,
+      1.0
+    ],
+    [
+      9.0,
+      6.0,
+      3.0,
+      0.0
+    ]
+  ],
+  "plain_model": {
+    "accuracy": 0.8133333333333334,
+    "macro_f1": 0.3463889713889714,
+    "mean_cost": 0.6933333333333334
+  },
+  "cost_sensitive_model": {
+    "accuracy": 0.6733333333333333,
+    "macro_f1": 0.3463989207139892,
+    "mean_cost": 0.6066666666666667
+  },
+  "cost_improvement": 0.08666666666666667,
+  "shap_routing_validation_single_split": {
+    "n_at_risk_test_samples": 30,
+    "dominant_cluster_recovery_accuracy": 0.3,
+    "intervention_type_match_accuracy": 0.36666666666666664,
+    "note": "Noisy at this sample size, see shap_routing_validation_cv_pooled instead."
+  },
+  "shap_routing_validation_cv_pooled": {
+    "n_at_risk_pooled": 121,
+    "dominant_cluster_recovery_accuracy": 0.4297520661157025,
+    "intervention_type_match_accuracy": 0.4380165289256198
+  }
+}

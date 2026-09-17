@@ -1,0 +1,46 @@
+{
+  "baseline_cv_default": {
+    "accuracy_mean": 0.911845730027548,
+    "f1_mean": 0.8824748848280443,
+    "auc_mean": 0.9558396544199909,
+    "accuracy_std": 0.007730697080111448,
+    "f1_std": 0.01091190465734012,
+    "auc_std": 0.00839854174991195
+  },
+  "baseline_optuna_best_params": {
+    "iterations": 500,
+    "depth": 5,
+    "learning_rate": 0.03625878379185366,
+    "l2_leaf_reg": 1.1616568805333802
+  },
+  "baseline_cv_tuned": {
+    "accuracy_mean": 0.9129476584022038,
+    "f1_mean": 0.8842661518016864,
+    "auc_mean": 0.9548025152417761,
+    "accuracy_std": 0.008113871336100923,
+    "f1_std": 0.010534893994945343,
+    "auc_std": 0.0075008594405904586
+  },
+  "cost_sensitive_cv_default": {
+    "accuracy_mean": 0.6433333333333333,
+    "macro_f1_mean": 0.4114603676618934,
+    "mean_cost_mean": 0.6033333333333333,
+    "accuracy_std": 0.036514837167011066,
+    "macro_f1_std": 0.06525147588721647,
+    "mean_cost_std": 0.06390096504226937
+  },
+  "cost_sensitive_optuna_best_params": {
+    "iterations": 450,
+    "depth": 5,
+    "learning_rate": 0.11960907320256242,
+    "l2_leaf_reg": 7.38004879866127
+  },
+  "cost_sensitive_cv_tuned": {
+    "accuracy_mean": 0.7133333333333334,
+    "macro_f1_mean": 0.4175818924491498,
+    "mean_cost_mean": 0.5583333333333333,
+    "accuracy_std": 0.02862594006219613,
+    "macro_f1_std": 0.06393201336472062,
+    "mean_cost_std": 0.06640573937712178
+  }
+}

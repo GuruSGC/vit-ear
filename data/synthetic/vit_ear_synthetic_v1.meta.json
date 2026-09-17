@@ -1,0 +1,28 @@
+{
+  "provenance": "Synthetic data generated for pipeline testing. Not real student records.",
+  "n_students": 600,
+  "seed": 42,
+  "risk_level_distribution": {
+    "0": 479,
+    "1": 69,
+    "2": 34,
+    "3": 18
+  },
+  "mentor_flag_distribution": {
+    "none": 479,
+    "financial": 65,
+    "pedagogical": 26,
+    "academic": 18,
+    "psychosocial": 12
+  },
+  "placeholders_pending_verification": [
+    "attendance_debarment_threshold and condonation band need checking against the current student handbook",
+    "mentor_flag_category set needs checking against the real mentor-mentee log categories"
+  ],
+  "ethical_use_only_fields": [
+    "social_category (used for fairness evaluation only, never a predictive input)"
+  ],
+  "not_applicable_semantics": [
+    "hostel_curfew_violations is NaN for day scholars, not zero"
+  ]
+}

@@ -1,0 +1,20 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyc
+.ipynb_checkpoints/
+
+# Virtual environment
+venv/
+env/
+.venv/
+
+# Downloaded/raw datasets (large; see README for how to fetch them)
+data/raw/
+
+# CatBoost auto-generated training logs
+catboost_info/
+
+# OS junk
+.DS_Store
+Thumbs.db

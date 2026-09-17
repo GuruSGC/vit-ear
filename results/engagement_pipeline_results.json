@@ -1,0 +1,17 @@
+{
+  "provenance": "Real public data (Kaggle deepramazumder/student-engagement-dataset, CC0), used as a substitute for DAiSEE. Static images, not video, so there's no temporal signal within a single image.",
+  "n_images": 2120,
+  "classes": [
+    "bored",
+    "confused",
+    "drowsy",
+    "focused",
+    "frustrated",
+    "lookingaway"
+  ],
+  "accuracy_6class": 0.9575471698113207,
+  "accuracy_macro_binary": 1.0,
+  "simulated_session_aggregate_pct_engaged": 0.475,
+  "simulated_session_size": 40,
+  "note": "The simulated session aggregate uses held-out test images standing in for frames from one lecture. It's a demo of the aggregate-only output design (never per-frame or per-identity), not a claim about a real classroom."
+}

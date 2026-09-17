@@ -1,0 +1,12 @@
+{
+  "provenance": "Real public data (UCI, Portugal). Literature comparison only, not a VIT-EAR result.",
+  "n_train_after_smote": 3534,
+  "n_test": 726,
+  "metrics": {
+    "accuracy": 0.9297520661157025,
+    "precision": 0.9145907473309609,
+    "recall": 0.9049295774647887,
+    "f1": 0.9097345132743363,
+    "auc_roc": 0.9710582499522019
+  }
+}
